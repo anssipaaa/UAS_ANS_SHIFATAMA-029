@@ -37,4 +37,4 @@ jobs:
         script: |
           sudo docker rm -f UAS_ANS_SHIFATAMA-029 || true
           sudo docker pull ${{ secrets.DOCKERHUB_USERNAME }}/UAS_ANS_SHIFATAMA-029:latest
-          sudo docker run -d --name uas_047_web_deploy_aws_docker -p 80:80 ${{ secrets.DOCKERHUB_USERNAME }}/UAS_ANS_SHIFATAMA-029:latest
+          sudo docker run -d --name UAS_ANS_SHIFATAMA-029 -p 80:80 ${{ secrets.DOCKERHUB_USERNAME }}/UAS_ANS_SHIFATAMA-029:latest
