@@ -1,4 +1,3 @@
-
 name: Deploy Web Statis to AWS EC2
 on:
   push:
