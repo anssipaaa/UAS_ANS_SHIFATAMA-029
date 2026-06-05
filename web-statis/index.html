@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UTS Ans</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fecfef);
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+nav h2 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    cursor: pointer;
+    color: #555;
+}
+
+/* HERO */
+.hero {
+    background: white;
+    margin: 40px auto;
+    padding: 30px;
+    max-width: 900px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.hero img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.hero-text h1 {
+    margin: 10px 0;
+}
+
+.badge {
+    display: inline-block;
+    background: #ffe4ec;
+    color: #e91e63;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.desc {
+    color: #666;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/* BUTTON */
+.buttons button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    margin-right: 10px;
+    cursor: pointer;
+    background: #eee;
+}
+
+.buttons button:hover {
+    background: #ddd;
+}
+
+/* SECTION */
+.section {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.section h2 {
+    margin-bottom: 10px;
+}
+
+/* GRID 2 KOLOM */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.box {
+    background: #f9fafb;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    font-size: 14px;
+}
+
+small {
+    color: #888;
+    font-size: 12px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>Ans Shifatama</h2>
+    <ul>
+        <li>Tentang</li>
+        <li>Skill</li>
+        <li>Pengalaman</li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <img src="profile.jpeg" alt="foto">
+
+    <div class="hero-text">
+        <span class="badge">CLOUD ENGINEER</span>
+        <h1>Ans Shifatama</h1>
+        <p>NIM 2388010029 - Informatika</p>
+
+        <p class="desc">
+            Mahasiswa yang tertarik di bidang cloud computing, DevOps, dan web development.
+        </p>
+
+        <div class="buttons">
+            <button>Email</button>
+            <button>GitHub</button>
+            <button>LinkedIn</button>
+        </div>
+    </div>
+</div>
+
+<!-- TENTANG -->
+<div class="section">
+    <h2>Tentang</h2>
+    <div class="grid">
+
+        <div class="box">
+            <small>Nama Lengkap</small>
+            <p><b>Ans Shifatama</b></p>
+        </div>
+
+        <div class="box">
+            <small>NIM</small>
+            <p><b>2388010029</b></p>
+        </div>
+
+        <div class="box">
+            <small>Tanggal Lahir</small>
+            <p><b>29 Januari 2005</b></p>
+        </div>
+
+        <div class="box">
+            <small>Alamat</small>
+            <p><b>Indramayu, Jawa Barat, Indonesia</b></p>
+        </div>
+
+        <div class="box">
+            <small>Email</small>
+            <p><b>ansshifatama291@gmail.com</b></p>
+        </div>
+
+        <div class="box">
+            <small>No HP</small>
+            <p><b>083195832326</b></p>
+        </div>
+
+    </div>
+</div>
+
+<!-- SKILL -->
+<div class="section">
+    <h2>Skill</h2>
+    <div class="box">
+        HTML, CSS, JavaScript, AWS, Linux
+    </div>
+</div>
+
+<!-- PENGALAMAN -->
+<div class="section">
+    <h2>Pengalaman</h2>
+    <div class="box">
+        <ul>
+            <li>Membuat website portfolio</li>
+            <li>Deploy di AWS EC2</li>
+            <li>Project Machine Learning</li>
+        </ul>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    Dideploy oleh: Ans Shifatama - 2388010029
+</footer>
+
+</body>
+</html>
