@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  output: 'standalone',
 
   // Keep mysql2 server-side only – prevents webpack from trying to
   // bundle node:diagnostics_channel and other Node built-ins.

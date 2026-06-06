@@ -19,7 +19,7 @@ services:
     restart: always
 
   container-dinamis:
-    image: anssipaaa/web-dinamis:latest
+  image: anssipaaa/web-dinamis_uas_029:latest
     ports:
       - "3000:3000"
     restart: always
@@ -27,7 +27,7 @@ services:
       DB_USER: userwebdinamis_2388010029
       DB_PASSWORD: 12345
       DB_NAME: dbcompro
-      DB_HOST: localhost
+      DB_HOST: db-webdinamis
       NEXTAUTH_SECRET: your-super-secret-key-1234
       NEXTAUTH_URL: http://localhost:3000
     depends_on:
