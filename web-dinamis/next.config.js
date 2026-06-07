@@ -27,7 +27,7 @@ const nextConfig = {
     return config;
   },
   serverActions: {
-    allowedOrigins: ['13.212.233.207:3000', 'localhost:3000']
+    allowedOrigins: ['13.212.233.207:3000', '13.212.233.207', 'localhost:3000', 'localhost']
   }
 };
 
