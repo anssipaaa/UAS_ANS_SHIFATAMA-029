@@ -35,6 +35,6 @@ jobs:
         key: ${{ secrets.AWS_PRIVATE_KEY }}
         port: 22
         script: |
-          sudo docker rm -f uas-ans-shifatama-029 || true
+          cd /home/ubuntu/container-dinamis/uasweb-dinamis
           sudo docker pull ${{ secrets.DOCKERHUB_USERNAME }}/uas-ans-shifatama-029:latest
-          sudo docker run -d --name uas-ans-shifatama-029 -p 80:80 ${{ secrets.DOCKERHUB_USERNAME }}/uas-ans-shifatama-029:latest
+          DOCKERHUB_USERNAME=anssipaaa sudo docker compose up -d --force-recreate --no-deps container-statis

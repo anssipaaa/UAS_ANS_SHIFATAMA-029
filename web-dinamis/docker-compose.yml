@@ -13,7 +13,7 @@ services:
     restart: always
 
   container-statis:
-    image: anssipaaa/compro_2388010029:latest
+    image: anssipaaa/uas-ans-shifatama-029:latest
     ports:
       - "80:80"
     restart: always
