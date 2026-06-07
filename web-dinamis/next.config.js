@@ -26,6 +26,9 @@ const nextConfig = {
     }
     return config;
   },
+  serverActions: {
+    allowedOrigins: ['13.212.233.207:3000', 'localhost:3000']
+  }
 };
 
 module.exports = nextConfig;
