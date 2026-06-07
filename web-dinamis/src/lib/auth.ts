@@ -68,6 +68,7 @@ export const authOptions: NextAuthOptions = {
   },
   session: {
     strategy: "jwt",
+    maxAge: 60 * 60, // 1 jam otomatis logout
   },
   secret: process.env.NEXTAUTH_SECRET || "your-super-secret-key-1234",
 };
