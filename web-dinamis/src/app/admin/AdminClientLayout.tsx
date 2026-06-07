@@ -2,8 +2,7 @@
 
 import { signOut, useSession, SessionProvider } from "next-auth/react";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
-import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 const LayoutIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg>
@@ -51,14 +50,8 @@ export default function AdminClientLayout({ children }: { children: React.ReactN
 }
 
 function AdminShell({ children }: { children: React.ReactNode }) {
-  const router = useRouter();
   const { data: session, status } = useSession();
   const pathname = usePathname();
-  useEffect(() => {
-    if (status !== "loading" && !session) {
-      router.replace('/login?callbackUrl=/admin');
-    }
-  }, [status, session, router]);
 
   const navItems = [
     { name: "Overview", href: "/admin", icon: LayoutIcon },

@@ -4,7 +4,8 @@ import { getToken } from 'next-auth/jwt';
 
 export async function middleware(req: NextRequest) {
   // Use env secret directly to avoid importing auth.ts which pulls in mysql2
-  const token = await getToken({ req, secret: process.env.NEXTAUTH_SECRET });
+  const secret = process.env.NEXTAUTH_SECRET || "your-super-secret-key-1234";
+  const token = await getToken({ req, secret });
   const { pathname } = req.nextUrl;
 
   if (pathname.startsWith('/admin')) {
