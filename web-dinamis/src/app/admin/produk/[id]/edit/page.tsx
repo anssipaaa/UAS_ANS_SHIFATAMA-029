@@ -46,8 +46,8 @@ export default async function EditProdukPage({ params }: { params: Promise<{ id:
             </div>
 
             <div className="admin-form-group">
-              <label className="admin-form-label">URL Gambar (Opsional)</label>
-              <input type="url" name="gambar_utama" className="admin-form-input" defaultValue={produk.gambar_utama || ""} />
+              <label className="admin-form-label">URL / Path Gambar (Opsional)</label>
+              <input type="text" name="gambar_utama" className="admin-form-input" defaultValue={produk.gambar_utama || ""} />
             </div>
 
             <div className="admin-form-group">

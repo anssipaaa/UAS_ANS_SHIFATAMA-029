@@ -37,8 +37,8 @@ export default async function CreateProdukPage() {
             </div>
 
             <div className="admin-form-group">
-              <label className="admin-form-label">URL Gambar (Opsional)</label>
-              <input type="url" name="gambar_utama" className="admin-form-input" placeholder="https://..." />
+              <label className="admin-form-label">URL / Path Gambar (Opsional)</label>
+              <input type="text" name="gambar_utama" className="admin-form-input" placeholder="/images/produk/..." />
             </div>
 
             <div className="admin-form-group">
