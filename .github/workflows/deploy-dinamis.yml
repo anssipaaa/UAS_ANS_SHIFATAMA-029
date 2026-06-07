@@ -44,7 +44,7 @@ jobs:
           script: |
             cd /home/ubuntu/container-dinamis/uasweb-dinamis
             docker pull anssipaaa/web-dinamis_uas_029:latest
-            DOCKERHUB_USERNAME=anssipaaa docker compose up -d --force-recreate --no-deps container-dinamis
+            DOCKERHUB_USERNAME=anssipaaa docker compose up -d --force-recreate
             docker image prune -af
             echo "=== Status ==="
             docker ps
