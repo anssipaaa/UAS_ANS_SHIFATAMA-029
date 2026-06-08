@@ -24,7 +24,7 @@ export default async function AdminProduk() {
         <p className="admin-page-subtitle">Daftar semua produk, harga, dan stok.</p>
       </div>
       <Link href="/admin/produk/create" className="admin-btn admin-btn-primary">
-        + Tambah Produk
+        + Add Produk
       </Link>
 
       <div className="admin-card" style={{ width: "100%", marginTop: "24px" }}>
