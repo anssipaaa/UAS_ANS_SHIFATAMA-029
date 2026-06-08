@@ -21,7 +21,7 @@ jobs:
       with:
         context: ./web-statis
         push: true
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/UAS_ANS_SHIFATAMA-029:latest
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/uas-ans-shifatama-029:latest
   deploy:
     needs: build-and-deploy
     runs-on: ubuntu-latest
@@ -35,6 +35,6 @@ jobs:
         key: ${{ secrets.AWS_PRIVATE_KEY }}
         port: 22
         script: |
-          sudo docker rm -f UAS_ANS_SHIFATAMA-029 || true
-          sudo docker pull ${{ secrets.DOCKERHUB_USERNAME }}/UAS_ANS_SHIFATAMA-029:latest
-          sudo docker run -d --name UAS_ANS_SHIFATAMA-029 -p 80:80 ${{ secrets.DOCKERHUB_USERNAME }}/UAS_ANS_SHIFATAMA-029:latest
+          sudo docker rm -f uas-ans-shifatama-029 || true
+          sudo docker pull ${{ secrets.DOCKERHUB_USERNAME }}/uas-ans-shifatama-029:latest
+          sudo docker run -d --name uas-ans-shifatama-029 -p 80:80 ${{ secrets.DOCKERHUB_USERNAME }}/uas-ans-shifatama-029:latest
