@@ -70,7 +70,7 @@ function AdminShell({ children }: { children: React.ReactNode }) {
       <header className="admin-floating-nav">
         <div className="admin-nav-brand">
           <StoreIcon />
-          <span>Admin 🎀</span>
+          <span>Cipaa 🎀</span>
         </div>
         
         <div className="admin-nav-links-scroll">
